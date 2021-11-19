@@ -22,6 +22,10 @@
 <!-- From Font Awesome: -->
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
+<!-- BS 5 -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -52,7 +56,7 @@
 
 
  <section>
-   <div class="flexbox">
+   <!-- <div class="flexbox">
      <div class="item flexbox">
      <div class="text-div">
       <h1>
@@ -70,51 +74,91 @@
      <div class="item">
        <img src="images/desktop/image-transform.jpg" alt="">
      </div>
-   </div>
-   <div class="flexbox">
-     <div class="item">
-       <img src="images/desktop/image-stand-out.jpg" alt="">
-     </div>
-     <div class="item flexbox">
-     <div class="text-div">
-      <h1>
-        Stand out to the right audience
-      </h1>
-
-      Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+   </div> -->
+   <div class="co ntainer-fluid">
+     <div class="row">
+       <div class="col-md-6">
+        <div class="text-div">
+          <h1>
+            Transform your brand
+          </h1>
     
-      <button>
-        Learn more
-      </button>
-     </div>
+          We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        
+          <button>
+            Learn more
+          </button>
+         </div>
+       </div>
+       <div class="col-md-6">
+        <img src="images/desktop/image-transform.jpg" class="w-100" alt="">
+       </div>
      </div>
    </div>
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col-md-6">
+        <img src="images/desktop/image-stand-out.jpg" class="w-100" alt="">
+
+       </div>
+       <div class="col-md-6">
+        <div class="text-div">
+          <h1>
+            Stand out to the right audience
+          </h1>
+    
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        
+          <button>
+            Learn more
+          </button>
+         </div>
+       </div>
+     </div>
+   </div>
+<!-- 
    <div class="flexbox ">
      <div class="item two-img">
-       <img src="images/desktop/image-graphic-design.jpg" alt="">
-       <div class="hover-text">
-         <h2>  Graphic design</h2>
-         Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-       </div>
+       
       </div>
       <div class="item two-img">
-        <img src="images/desktop/image-photography.jpg" alt="">
-        <div class="hover-text">
-          <h2> Photography</h2>
-          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-        </div>
+       
 
+     </div>
+   </div> -->
+
+   <div class="row" >
+     <div class="col-md-6" style="position: relative;">
+      <img src="images/desktop/image-graphic-design.jpg" class="w-100 t-img" alt="">
+      <div class="hover-text">
+        <h2>  Graphic design</h2>
+        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      </div>
+     </div>
+     <div class="col-md-6"  style="position: relative;">
+      <img src="images/desktop/image-photography.jpg" class="w-100 t-img" alt="">
+      <div class="hover-text">
+        <h2> Photography</h2>
+        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      </div>
      </div>
    </div>
  </section>
 
 <section>
-  <h1>
+  <h1 class="text-center">
     Client testimonials
   </h1>
 <div class="flexbox space-around">
-    <!-- testimonials start -->
-    <div class="testimonials-card">
+   
+  
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+     <!-- testimonials start -->
+     <div class="testimonials-card">
       <div class="img-div">
         <img src="images/image-emily.jpg" alt="">
       </div>
@@ -128,7 +172,9 @@
       </div>
     </div>
     <!-- testimonials ends -->
-      <!-- testimonials start -->
+  </div>
+  <div class="col-md-4">
+        <!-- testimonials start -->
   <div class="testimonials-card">
     <div class="img-div">
       <img src="images/image-thomas.jpg" alt="">
@@ -143,6 +189,9 @@
     </div>
   </div>
   <!-- testimonials ends -->
+  </div>
+  <div class="col-md-4">
+    
     <!-- testimonials start -->
     <div class="testimonials-card">
       <div class="img-div">
@@ -159,6 +208,7 @@
       </div>
     </div>
     <!-- testimonials ends -->
+  </div>
 </div>
 </section>
 

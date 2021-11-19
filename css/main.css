@@ -48,7 +48,10 @@ width: 100%;
   }
   .flexbox .item{
 width: 50%;
+min-width: 400px;
 }
+
+
 .flexbox .item img{
 width: 100%;
 margin-top: 0;
@@ -74,27 +77,68 @@ margin-top: 0;
 font-size: 18px;
   }
   .flexbox .item .text-div button:hover{
- border-bottom: 10px solid hsl(51, 100%, 49%);
+      border-bottom: 10px solid hsl(51, 100%, 49%);
+    }
+    @media (max-width:375px) {
+        .t-img{
+            height: 390px;
+        }
+        nav .link-div{
+          display: none;
+      }
+    .flexbox .item{
+        min-width: 100% !important;
+        border: solid;
+        }
+        .flexbox .item .text-div{
+          font-family: 'Barlow', sans-serif;
+          margin: 20px;
+        }
+        .flexbox .item .text-div h1{
+          font-size: 25px;
+  border: solid;
+          margin-bottom: 15px;
+  
+        }
+        .flexbox .item .text-div button{
+  
+          margin-top: 25px;
+  
+      font-size: 15px;
+        }
   }
-  .two-img{
-    position: relative;
+  @media (max-width:1440px) {
+    .flexbox .item{
+        min-width: 400px;
+        }
   }
   .hover-text{
     display: block;
     position: absolute;
-    bottom: 100px;
-    margin: auto 150px;
+    bottom: 40px;
+    /* margin: auto 150px; */
     text-align: center;
     font-family: 'Barlow', sans-serif;
-
+padding: 20px;
   }
   .hover-text h2{
    margin-bottom: 30px;
    font-family: 'Fraunces', serif;
 
   }
+  @media (max-width:375px) {
+    .hover-text{
+
+        bottom: 20px;
+ 
+      }
+      .hover-text h2{
+       margin-bottom: 15px;
+      }
+  }
   .testimonials-card{
-    width: 25%;
+    /* width: 25%; */
+
     /* border: solid; */
     text-align: center;
   }
