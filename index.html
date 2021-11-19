@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@900&family=Kumbh+Sans:wght@400;800&family=Lobster&family=Red+Hat+Display:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@900&family=Kumbh+Sans:wght@400;800&family=Lobster&family=Red+Hat+Display:wght@900&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+  
+  <section class="top-section">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .top-section{
+        position: relative;
+        color: #fff;
+      }
+      .top-section nav{
+display: flex;
+position: absolute;
+width: 100%;
+      }
+      .top-section nav .logo-div{
+margin: 30px auto 30px 20px  ;
+border: solid;
+      }
+      .top-section nav ul{
+list-style: none;
+display: flex;
+      }
+      .top-section nav ul li button{
+margin: 20px 10px;
+cursor: pointer;
+padding: 10px;
+border-radius: 20px;
+border:none;
+background-color: transparent;
+color: #fff;
+      }
+      .top-section nav ul li button:hover{
+background-color: #ddd;
+      }
+      .top-section nav ul li button:focus{
+background-color: #fff;
+color: turquoise;
+      }
+      .top-section .top-image{
+display: block;
+      }
+      .top-section .top-image img{
+width: 100%;
+      }
+      .flexbox{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .flexbox .item{
+    width: 50%;
+  }
+  .flexbox .item img{
+    width: 100%;
+    margin-top: 0;
+      }
+      .flexbox .item .text-div{
+        font-family: 'Barlow', sans-serif;
+        margin: auto 150px;
+      }
+      .flexbox .item .text-div h1{
+        font-size: 40px;
+        font-family: 'Fraunces', serif;
+        margin-bottom: 30px;
+        font-weight: 900;
+        background-color: hsl(0, 0%, 100%);
+      }
+      .flexbox .item .text-div button{
+        display: block;
+        margin-top: 50px;
+        /* font-weight: ; */
+        background-color: transparent;
+        border: none;
+        font-family: 'Fraunces', serif;
+font-size: 18px;
+      }
+      .flexbox .item .text-div button:hover{
+     border-bottom: 10px solid hsl(51, 100%, 49%);
+      }
+      </style>
+
+<nav>
+  <div class="logo-div">
+    Logo
+</div>
+<div class="link-div">
+  <ul>
+    <li> <button>About</button></li>
+    <li> <button>Services</button></li>
+    <li> <button>Projects</button></li>
+    <li> <button>
+      Contact
+    </button></li>
+  </ul>
+</div>  We are creatives
+</nav>
+<div class="top-image">
+  <img src="images/desktop/image-header.jpg" alt="">
+
+</div>
+  </section>
+
+
+
+
+ <section>
+   <div class="flexbox">
+     <div class="item flexbox">
+     <div class="text-div">
+      <h1>
+        Transform your brand
+      </h1>
+
+      We are a full-service creative agency specializing in helping brands grow fast. 
+      Engage your clients through compelling visuals that do most of the marketing for you.
+    
+      <button>
+        Learn more
+      </button>
+     </div>
+     </div>
+     <div class="item">
+       <img src="images/desktop/image-transform.jpg" alt="">
+     </div>
+   </div>
+   <div class="flexbox">
+     <div class="item">
+       <img src="images/desktop/image-stand-out.jpg" alt="">
+     </div>
+     <div class="item flexbox">
+     <div class="text-div">
+      <h1>
+        Stand out to the right audience
+      </h1>
+
+      Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+    
+      <button>
+        Learn more
+      </button>
+     </div>
+     </div>
+   </div>
+   <style>
+     .two-img{
+       position: relative;
+     }
+     .hover-text{
+       display: block;
+       position: absolute;
+       bottom: 100px;
+       margin: auto 150px;
+       text-align: center;
+       font-family: 'Barlow', sans-serif;
+
+     }
+     .hover-text h2{
+      margin-bottom: 30px;
+      font-family: 'Fraunces', serif;
+
+     }
+   </style>
+   <div class="flexbox ">
+     <div class="item two-img">
+       <img src="images/desktop/image-graphic-design.jpg" alt="">
+       <div class="hover-text">
+         <h2>  Graphic design</h2>
+         Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+       </div>
+      </div>
+      <div class="item two-img">
+        <img src="images/desktop/image-photography.jpg" alt="">
+        <div class="hover-text">
+          <h2> Photography</h2>
+          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </div>
+
+     </div>
+   </div>
+ </section>
+
+  
+
+ 
+
+
+ 
+
+  
+
+
+  Client testimonials
+
+  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+  Emily R.
+  Marketing Director
+
+  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+  Thomas S.
+  Chief Operating Officer
+
+  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+  Jennie F.
+  Business Owner
+
+  About
+  Services
+  Projects
+  Contact
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
