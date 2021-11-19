@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .top-section{
+    position: relative;
+    color: #fff;
+  }
+  .top-section nav{
+display: flex;
+position: absolute;
+width: 100%;
+  }
+  .top-section nav .logo-div{
+margin: 30px auto 30px 20px  ;
+border: solid;
+  }
+  .top-section nav ul{
+list-style: none;
+display: flex;
+  }
+  .top-section nav ul li button{
+margin: 20px 10px;
+cursor: pointer;
+padding: 10px;
+border-radius: 20px;
+border:none;
+background-color: transparent;
+color: #fff;
+  }
+  .top-section nav ul li button:hover{
+background-color: #ddd;
+  }
+  .top-section nav ul li button:focus{
+background-color: #fff;
+color: turquoise;
+  }
+  .top-section .top-image{
+display: block;
+  }
+  .top-section .top-image img{
+width: 100%;
+  }
+  .flexbox{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flexbox .item{
+width: 50%;
+}
+.flexbox .item img{
+width: 100%;
+margin-top: 0;
+  }
+  .flexbox .item .text-div{
+    font-family: 'Barlow', sans-serif;
+    margin: auto 150px;
+  }
+  .flexbox .item .text-div h1{
+    font-size: 40px;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 30px;
+    font-weight: 900;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .flexbox .item .text-div button{
+    display: block;
+    margin-top: 50px;
+    /* font-weight: ; */
+    background-color: transparent;
+    border: none;
+    font-family: 'Fraunces', serif;
+font-size: 18px;
+  }
+  .flexbox .item .text-div button:hover{
+ border-bottom: 10px solid hsl(51, 100%, 49%);
+  }
+  .two-img{
+    position: relative;
+  }
+  .hover-text{
+    display: block;
+    position: absolute;
+    bottom: 100px;
+    margin: auto 150px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+
+  }
+  .hover-text h2{
+   margin-bottom: 30px;
+   font-family: 'Fraunces', serif;
+
+  }
+  .testimonials-card{
+    width: 25%;
+    /* border: solid; */
+    text-align: center;
+  }
+  .testimonials-card .img-div{
+   margin: 50px;
+  }
+  .testimonials-card .img-div img{
+    width: 100px;
+    border-radius: 50%;
+    /* border: solid; */
+  }
+  .testimonials-card .text-div{
+   font-size: 18px;
+   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+   font-family: 'Barlow', sans-serif;
+
+   padding: 10px 30px;
+    /* border: solid; */
+  }
+  .testimonials-card .text-div .name-div{
+margin: 30px;
+font-family: 'Fraunces', serif;
+
+    /* border: solid; */
+  }
+  .testimonials-card .text-div .name-div span{
+display: inline-block;
+    margin: 10px 0;
+font-family: 'Barlow', sans-serif;
+    /* border: solid; */
+    font-size: 12px;
+  }
+  .space-around{
+    justify-content: space-around;
+  }
+  .image-section .item img{
+    width: 100%;
+    height: 415px;
+    /* border: solid; */
+  }
+  .image-section .flexbox .item{
+    width: 25%;
+    /* border: solid; */
+    height: 415px;
+    /* overflow: hidden; */
+  }
+
+  .footer-section{
+    /* background-color: hsl(168, 34%, 41%); */
+    background-color: rgb(141,213,199);
+  }
+  .footer-section .logo-div{
+  text-align: center;
+  padding: 50px;
+  font-family: Fraunces;
+  font-size: 30px;
+  }
+  .footer-section ul{
+   list-style: none;
+   /* border: solid; */
+   color: hsl(167, 40%, 24%);
+   margin: auto;
+  }
+  .footer-section ul li{
+    margin: 20px ;
+    text-align: center;
+    font-family: Barlow;
+  }
+  .footer-section ul li:hover{
+  color: #fff;
+  cursor: pointer;
+  }
