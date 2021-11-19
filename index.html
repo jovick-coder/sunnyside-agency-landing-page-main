@@ -19,7 +19,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@900&family=Kumbh+Sans:wght@400;800&family=Lobster&family=Red+Hat+Display:wght@900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@900&family=Kumbh+Sans:wght@400;800&family=Lobster&family=Red+Hat+Display:wght@900&display=swap" rel="stylesheet">
 
-
+<!-- From Font Awesome: -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 </head>
 <body>
@@ -329,16 +330,57 @@ font-size: 18px;
 </section>
  
 
-
-
-  About
-  Services
-  Projects
-  Contact
-
+<section class="footer-section">
+  <style>
+    .footer-section{
+      /* background-color: hsl(168, 34%, 41%); */
+      background-color: rgb(141,213,199);
+    }
+    .footer-section .logo-div{
+    text-align: center;
+    padding: 50px;
+    font-family: Fraunces;
+    font-size: 30px;
+    }
+    .footer-section ul{
+     list-style: none;
+     /* border: solid; */
+     color: hsl(167, 40%, 24%);
+     margin: auto;
+    }
+    .footer-section ul li{
+      margin: 20px ;
+      text-align: center;
+      font-family: Barlow;
+    }
+    .footer-section ul li:hover{
+    color: #fff;
+    cursor: pointer;
+    }
+  </style>
+  <div class="logo-div">
+LOGO
+  </div>
+  
+ <div class="flexbox" style="flex-direction: column;">
+  <ul class="flexbox">
+    <li> About</li>
+    <li> Services</li>
+    <li> Projects</li>
+    <li> Contact</li>
+  </ul>
+  <ul class="flexbox">
+    <li> <i class="fab fa-facebook-square" aria-hidden="true"></i></li>
+    <li> <i class="fab fa-instagram" aria-hidden="true"></i></li>
+    <li> <i class="fab fa-twitter" aria-hidden="true"></i></li>
+    <li> <i class="fab fa-pinterest" aria-hidden="true"></i></li>
+  </ul>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+ </div>
+</section>
+
 </body>
 </html>
