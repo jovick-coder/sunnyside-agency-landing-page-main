@@ -16,15 +16,13 @@ body{
   .top-section nav{
 display: flex;
 position: absolute;
-width: 100vw;
+width: 100%;
   }
   .top-section nav .logo-div{
 margin: 10px auto 10px 10px  ;
-border: solid;
+/* border: solid; */
   }
-  .top-section nav .link-div{
-border: saddlebrown solid;
-  }
+
   .top-section nav ul{
 list-style: none;
 display: flex;
@@ -51,7 +49,7 @@ color: turquoise;
 display: block;
   }
   .top-section .top-image img{
-width: 100vw;
+width: 100%;
   }
   .flexbox{
     display: flex;
@@ -64,7 +62,6 @@ min-width: 400px;
 
 
 .grid-section{
-  background-color: rgb(255,251,248);
 overflow: hidden;
 }
 .grid-section .item img{
@@ -96,7 +93,7 @@ font-size: 18px;
       border-bottom: 10px solid hsl(51, 100%, 49%);
     }
     .testimonials-section{
-      margin: 20px;
+      padding: 20px;
       }
     @media (max-width:767px) {
       .grid-section .md-reverse{
@@ -127,7 +124,7 @@ font-size: 18px;
    
 .grid-section {
     min-width: 100vw !important;
-    border: solid;
+    /* border: solid; */
     background-color: rgb(255,251,248);
     text-align: center;
     }
@@ -139,7 +136,7 @@ font-size: 18px;
     }
   .grid-section  .text-div h1{
       font-size: 30px;
-border: solid;
+/* border: solid; */
       margin-bottom: 15px;
 
     }
