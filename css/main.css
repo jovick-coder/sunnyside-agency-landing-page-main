@@ -47,6 +47,7 @@ color: turquoise;
   }
   .top-section .top-image{
 display: block;
+/* position: relative; */
   }
   .top-section .top-image img{
 width: 100%;
