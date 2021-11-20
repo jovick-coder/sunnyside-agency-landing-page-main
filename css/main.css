@@ -15,7 +15,7 @@ body{
   }
   .top-section nav{
 display: flex;
-position: absolute;
+position: absolute; 
 width: 100%;
   }
   .top-section nav .logo-div{

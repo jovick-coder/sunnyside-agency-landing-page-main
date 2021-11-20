@@ -48,10 +48,18 @@
 </nav>
 <div class="top-image">
   <style>
+    /* .top-image{
+      max-width: 100%;
+      height: 100vh;
+background-image: url('images/desktop/image-header.jpg');
+background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* background-size: cover; * /
+    } */
     .top-text{
       position: absolute;
       margin: auto;
-      /* border: solid; */
+      border: solid;
       /* left: 50%; */
       top: 20%;
       width: 100%;
@@ -73,17 +81,73 @@
       /* border: solid; */
       /* height: 100px; */
       max-width: 50px;
+    } 
+    .top-image .bg-img{
+      /* display: none; */
+      /* max-width: 320px !important;
+      margin: 0 auto; */
     }
+    
+    .mb-img{
+      display: none;
+    }
+    @media (min-width:0px) and   (max-width: 375px) {
+      .mb-img{
+      display: block;
+    }
+      .ds-img{
+      display: none;
+    }
+    }
+    @media (min-width:0px) and   (max-width:767px) {
+      .top-text img{
+
+        max-width: 35px;
+      } 
+      .top-section {
+
+        
+      }
+      .top-section nav{
+display: flex;
+position: static;
+background-color: #3DBEFF;
+/* height: 400px; */
+width: 100%;
+  }
+    .top-text span{
+  color: yellow;
+  font-size: 200%;
+  }
+
+    }
+
+    @media (min-width:768px)and  (max-width:1440px) {
+      .top-text span{
+    color: red;
+    font-size: 250%;
+    }
+    .mb-img{
+      display: none;
+    }
+      .ds-img{
+      display: block;
+    }
+  }
+  
   </style>
  <div class="d-flex">
   <div class="top-text">
-    <span>
+    <span class="text-center">
       We are creatives
     </span>
     <img src="images/icon-arrow-down.svg" alt="">
    </div>
  </div>
-  <img src="images/desktop/image-header.jpg" alt="">
+<div class="d-flex" style="background-color: #3DBEFF;">
+  <img src="images/mobile/image-header.jpg" class="mb-img" alt="">
+  <img src="images/desktop/image-header.jpg" class="ds-img" alt="">
+</div>
 
 </div>
   </section>
