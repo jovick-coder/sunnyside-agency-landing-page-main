@@ -1,10 +1,13 @@
-*{
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   .row>*{
     padding: 0;
+    /* border: solid; */
+    /* width: 100%; */
+  
   }
   .top-section{
     position: relative;
@@ -13,20 +16,25 @@
   .top-section nav{
 display: flex;
 position: absolute;
-width: 100%;
+width: 100vw;
   }
   .top-section nav .logo-div{
-margin: 30px auto 30px 20px  ;
+margin: 10px auto 10px 10px  ;
 border: solid;
+  }
+  .top-section nav .link-div{
+border: saddlebrown solid;
   }
   .top-section nav ul{
 list-style: none;
 display: flex;
+margin: 0;
+padding: 0;
   }
   .top-section nav ul li button{
-margin: 20px 10px;
+margin: 10px 5px;
 cursor: pointer;
-padding: 10px;
+padding: 10px 15px;
 border-radius: 20px;
 border:none;
 background-color: transparent;
@@ -43,29 +51,29 @@ color: turquoise;
 display: block;
   }
   .top-section .top-image img{
-width: 100%;
+width: 100vw;
   }
   .flexbox{
     display: flex;
     flex-wrap: wrap;
   }
   .flexbox .item{
-width: 50%;
+width: 50vw;
 min-width: 400px;
 }
 
 
 .grid-section{
   background-color: rgb(255,251,248);
-
+overflow: hidden;
 }
 .grid-section .item img{
-width: 100%;
+width: 100vw;
 margin-top: 0;
   }
  .grid-section .text-div{
     font-family: 'Barlow', sans-serif;
-    margin: auto 150px;
+    /* margin: auto 150px; */
   }
  .grid-section .text-div h1{
     font-size: 40px;
@@ -87,6 +95,9 @@ font-size: 18px;
  .grid-section .text-div button:hover{
       border-bottom: 10px solid hsl(51, 100%, 49%);
     }
+    .testimonials-section{
+      margin: 20px;
+      }
     @media (max-width:767px) {
       .grid-section .md-reverse{
         display: flex; 
@@ -96,6 +107,9 @@ font-size: 18px;
     
     @media (max-width:375px) {
       
+      img{
+        /* width: 100%!important; */
+      }
     }
     @media (max-width:490px) {
       /* hid the nav on mobile */
@@ -112,7 +126,7 @@ font-size: 18px;
     }
    
 .grid-section {
-    min-width: 100% !important;
+    min-width: 100vw !important;
     border: solid;
     background-color: rgb(255,251,248);
     text-align: center;
@@ -124,7 +138,7 @@ font-size: 18px;
       color: hsl(213, 9%, 39%);
     }
   .grid-section  .text-div h1{
-      font-size: 25px;
+      font-size: 30px;
 border: solid;
       margin-bottom: 15px;
 
