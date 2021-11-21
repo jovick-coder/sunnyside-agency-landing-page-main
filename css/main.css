@@ -7,7 +7,7 @@ body{
     padding: 0;
     /* border: solid; */
     /* width: 100%; */
-  
+
   }
   .top-section{
     position: relative;
@@ -15,7 +15,7 @@ body{
   }
   .top-section nav{
 display: flex;
-position: absolute; 
+position: absolute;
 width: 100%;
   }
   .top-section nav .logo-div{
@@ -35,7 +35,7 @@ cursor: pointer;
 padding: 10px 15px;
 border-radius: 20px;
 border:none;
-background-color: transparent;
+background-color: black;
 color: #fff;
   }
   .top-section nav ul li button:hover{
@@ -79,7 +79,7 @@ margin-top: 0;
     margin-bottom: 30px;
     font-weight: 900;
     color:  hsl(212, 27%, 19%);
-  
+
   }
  .grid-section .text-div button{
     display: block;
@@ -98,13 +98,13 @@ font-size: 18px;
       }
     @media (max-width:767px) {
       .grid-section .md-reverse{
-        display: flex; 
+        display: flex;
          flex-flow: column-reverse;
             }
     }
-    
+
     @media (max-width:375px) {
-      
+
       img{
         /* width: 100%!important; */
       }
@@ -117,12 +117,12 @@ font-size: 18px;
       .grid-section .text-div h1{
         font-size: 30px;
         margin-bottom: 20px;
-      
+
       }
     .t-img{
         height: 390px;
     }
-   
+
 .grid-section {
     min-width: 100vw !important;
     /* border: solid; */
