@@ -1,237 +1,340 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .row>*{
-    padding: 0;
-  }
-  .top-section{
-    position: relative;
-    color: #fff;
-  }
-  .top-section nav{
-display: flex;
-position: absolute; 
-width: 100%;
-  }
-  .top-section nav label{
-display: none;
-  }
-  .top-section nav .logo-div{
-margin: 10px auto 10px 10px  ;
-  }
-
-  .top-section nav ul{
-list-style: none;
-display: flex;
-margin: 0;
-padding: 0;
-  }
-  .top-section nav ul li button{
-margin: 10px 5px;
-cursor: pointer;
-padding: 10px 15px;
-border-radius: 20px;
-border:none;
-background-color: transparent;
-color: #fff;
-  }
-  .top-section nav ul li button:hover{
-background-color: #ddd;
-  }
-  .top-section nav ul li button:focus{
-background-color: #fff;
-color: turquoise;
-  }
-  .top-section .top-image{
-display: block;
-  }
-  .top-section .top-image img{
-width: 100%;
-  }
-  .flexbox{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .flexbox .item{
-width: 50vw;
-min-width: 400px;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.row > * {
+  padding: 0;
+}
+.top-section {
+  position: relative;
+  color: #fff;
+}
+.top-section nav {
+  display: flex;
+  position: absolute;
+  width: 100%;
+}
+.top-section nav label {
+  display: none;
+}
+.top-section nav .logo-div {
+  margin: 10px auto 10px 10px;
 }
 
-
-.grid-section{
-overflow: hidden;
+.top-section nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
-.grid-section .item img{
-width: 100vw;
-margin-top: 0;
-  }
- .grid-section .text-div{
-    font-family: 'Barlow', sans-serif;
-  }
- .grid-section .text-div h1{
-    font-size: 40px;
-    font-family: 'Fraunces', serif;
-    margin-bottom: 30px;
-    font-weight: 900;
-    color:  hsl(212, 27%, 19%);
-  
-  }
- .grid-section .text-div button{
-    display: block;
-    margin-top: 50px;
-    background-color: transparent;
-    border: none;
-    font-family: 'Fraunces', serif;
-font-size: 18px;
-  }
- .grid-section .text-div button:hover{
-      border-bottom: 10px solid hsl(51, 100%, 49%);
-    }
-    .testimonials-section{
-      padding: 20px;
-      }
-    @media (max-width:767px) {
-      .grid-section .md-reverse{
-        display: flex; 
-         flex-flow: column-reverse;
-            }
-    }
-    
-    @media (max-width:490px) {
-      /* hid the nav on mobile */
-      nav .link-div{
-        display: none;
-        background-color: #fff;
-        color: #ddd;
-    }
-    .top-section nav ul li button{
-      color: hsl(232, 10%, 55%);
-      font-family: Barlow;
-    }
-    .top-section nav ul li button:hover{
-      background-color:transparent;
-    }
-    .top-section nav ul li button:focus{
-      background-color: hsl(51, 100%, 49%);
-      color: hsl(213, 9%, 39%);
-      font-family: Fraunces;
-        }
-    .top-section nav label{
-      display: block;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-        }
-      .grid-section .text-div h1{
-        font-size: 30px;
-        margin-bottom: 20px;
-      
-      }
-    .t-img{
-        height: 390px;
-    }
-   
+.top-section nav ul li button {
+  margin: 10px 5px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+.top-section nav ul li button:hover {
+  background-color: #ddd;
+}
+.top-section nav ul li button:focus {
+  background-color: #fff;
+  color: turquoise;
+}
+.top-section .top-image {
+  display: block;
+}
+.top-section .top-image img {
+  width: 100%;
+}
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexbox .item {
+  width: 50vw;
+  min-width: 400px;
+}
+
 .grid-section {
-    min-width: 100vw !important;
-    background-color: rgb(255,250,245);
-    text-align: center;
-    }
-
-  .grid-section  .text-div{
-      font-family: 'Barlow', sans-serif;
-      margin: 20px;
-      color: hsl(213, 9%, 39%);
-    }
-  .grid-section  .text-div h1{
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
-  .grid-section  .text-div button{
-
-      margin-top: 25px;
-
-  font-size: 15px;
-    }
-
+  overflow: hidden;
+}
+.grid-section .item img {
+  width: 100vw;
+  margin-top: 0;
+}
+.grid-section .text-div {
+  font-family: 'Barlow', sans-serif;
+}
+.grid-section .text-div h1 {
+  font-size: 40px;
+  font-family: 'Fraunces', serif;
+  margin-bottom: 30px;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+}
+.grid-section .text-div button {
+  display: block;
+  margin-top: 50px;
+  background-color: transparent;
+  border: none;
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+}
+.grid-section .text-div button:hover {
+  border-bottom: 10px solid hsl(51, 100%, 49%);
+}
+.testimonials-section {
+  padding: 20px;
+}
+@media (max-width: 767px) {
+  .grid-section .md-reverse {
+    display: flex;
+    flex-flow: column-reverse;
   }
-  @media (max-width:1440px) {
-  .grid-section {
-        min-width: 400px;
-        }
+}
+
+@media (max-width: 490px) {
+  /* hid the nav on mobile */
+  nav .link-div {
+    display: none;
+    background-color: #fff;
+    color: #ddd;
   }
-  .hover-text{
+  .top-section nav ul li button {
+    color: hsl(232, 10%, 55%);
+    font-family: Barlow;
+  }
+  .top-section nav ul li button:hover {
+    background-color: transparent;
+  }
+  .top-section nav ul li button:focus {
+    background-color: hsl(51, 100%, 49%);
+    color: hsl(213, 9%, 39%);
+    font-family: Fraunces;
+  }
+  .top-section nav label {
     display: block;
     position: absolute;
-    bottom: 40px;
+    top: 10px;
+    right: 10px;
+  }
+  .grid-section .text-div h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .t-img {
+    height: 390px;
+  }
+
+  .grid-section {
+    min-width: 100vw !important;
+    background-color: rgb(255, 250, 245);
     text-align: center;
+  }
+
+  .grid-section .text-div {
     font-family: 'Barlow', sans-serif;
-padding: 20px;
+    margin: 20px;
+    color: hsl(213, 9%, 39%);
   }
-  .hover-text h2{
-   margin-bottom: 30px;
-   font-family: 'Fraunces', serif;
+  .grid-section .text-div h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .grid-section .text-div button {
+    margin-top: 25px;
 
+    font-size: 15px;
   }
-  @media (max-width:375px) {
-    .hover-text{
-
-        bottom: 20px;
-
-      }
-      .hover-text h2{
-       margin-bottom: 15px;
-      }
+}
+@media (max-width: 1440px) {
+  .grid-section {
+    min-width: 400px;
   }
-  .testimonials-card{
-    text-align: center;
+}
+.hover-text {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  padding: 20px;
+}
+.hover-text h2 {
+  margin-bottom: 30px;
+  font-family: 'Fraunces', serif;
+}
+@media (max-width: 375px) {
+  .hover-text {
+    bottom: 20px;
   }
-  .testimonials-card .img-div{
-   margin: 50px;
+  .hover-text h2 {
+    margin-bottom: 15px;
   }
-  .testimonials-card .img-div img{
-    width: 100px;
-    border-radius: 50%;
-  }
-  .testimonials-card .text-div{
-   font-size: 18px;
-   font-family: 'Barlow', sans-serif;
-   padding: 10px 30px;
-  }
-  .testimonials-card .text-div .name-div{
-margin: 30px;
-font-family: 'Fraunces', serif;
-  }
-  .testimonials-card .text-div .name-div span{
-display: inline-block;
-    margin: 10px 0;
-font-family: 'Barlow', sans-serif;
-    font-size: 12px;
-  }
-  .space-around{
-    justify-content: space-around;
-  }
-  .footer-section{
-    background-color: rgb(141,213,199);
-  }
-  .footer-section .logo-div{
+}
+.testimonials-card {
+  text-align: center;
+}
+.testimonials-card .img-div {
+  margin: 50px;
+}
+.testimonials-card .img-div img {
+  width: 100px;
+  border-radius: 50%;
+}
+.testimonials-card .text-div {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  padding: 10px 30px;
+}
+.testimonials-card .text-div .name-div {
+  margin: 30px;
+  font-family: 'Fraunces', serif;
+}
+.testimonials-card .text-div .name-div span {
+  display: inline-block;
+  margin: 10px 0;
+  font-family: 'Barlow', sans-serif;
+  font-size: 12px;
+}
+.space-around {
+  justify-content: space-around;
+}
+.footer-section {
+  background-color: rgb(141, 213, 199);
+}
+.footer-section .logo-div {
   text-align: center;
   padding: 50px;
   font-family: Fraunces;
   font-size: 30px;
-  }
-  .footer-section ul{
-   list-style: none;
-   color: hsl(167, 40%, 24%);
-   margin: auto;
-  }
-  .footer-section ul li{
-    margin: 20px ;
-    text-align: center;
-    font-family: Barlow;
-  }
-  .footer-section ul li:hover{
+}
+.footer-section ul {
+  list-style: none;
+  color: hsl(167, 40%, 24%);
+  margin: auto;
+}
+.footer-section ul li {
+  margin: 20px;
+  text-align: center;
+  font-family: Barlow;
+}
+.footer-section ul li:hover {
   color: #fff;
   cursor: pointer;
+}
+
+.top-text {
+  position: absolute;
+  margin: auto;
+
+  top: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.top-text span {
+  text-transform: uppercase;
+  margin: 30px auto;
+  font-size: 60px;
+  font-family: Fraunces;
+  font-stretch: expanded;
+}
+.top-text img {
+  margin: auto;
+  max-width: 50px;
+}
+.mb-img {
+  display: none;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .top-text img {
+    max-width: 35px;
   }
+  .top-text span {
+    color: yellow;
+    font-size: 200%;
+  }
+  .image-section .row .col-xs-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .top-text span {
+    /* color: red; */
+    font-size: 3rem !important;
+  }
+  .mb-img {
+    display: none;
+  }
+  .ds-img {
+    display: block;
+  }
+  .top-text {
+    top: 20%;
+  }
+  .top-text img {
+    min-width: 30px !important;
+    min-height: 60px !important;
+    height: 20vw;
+  }
+
+  .top-text span {
+    font-size: 5rem;
+    margin: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 375px) {
+  .mb-img {
+    display: block;
+  }
+  .ds-img {
+    display: none;
+  }
+  .top-text {
+    top: 18%;
+  }
+  .top-text img {
+    width: 100%;
+    min-width: 30px !important;
+  }
+
+  .top-text span {
+    font-size: 40px;
+  }
+}
+.text-area {
+  background-color: rgb(255, 251, 248);
+}
+
+/* Mobile responsive top menue */
+#toggleMenu:checked ~ .top-section nav {
+  display: block;
+}
+#toggleMenu:checked ~ .link-div {
+  display: block;
+  border: solid;
+  width: 100%;
+}
+#toggleMenu:checked ~ .top-section nav .link-div {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  width: 80%;
+  margin: 0 10%;
+}
+#toggleMenu:checked ~ .top-section nav .link-div ul {
+  display: block;
+  width: 100%;
+}
+#toggleMenu:checked ~ .top-section nav .link-div ul li {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
