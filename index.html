@@ -1,174 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@900&family=Kumbh+Sans:wght@400;800&family=Lobster&family=Red+Hat+Display:wght@900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@900&family=Kumbh+Sans:wght@400;800&family=Lobster&family=Red+Hat+Display:wght@900&display=swap" rel="stylesheet">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
 
-<!-- From Font Awesome: -->
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@900&family=Kumbh+Sans:wght@400;800&family=Lobster&family=Red+Hat+Display:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@900&family=Kumbh+Sans:wght@400;800&family=Lobster&family=Red+Hat+Display:wght@900&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- BS 5 -->
+    <!-- From Font Awesome: -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  
-  <section class="top-section">
-<nav>
-  <div class="logo-div d-flex">
-    <span class="m-auto">LOGO</span>
-</div>
-<div class="link-div">
-  <ul>
-    <li> <button>About</button></li>
-    <li> <button>Services</button></li>
-    <li> <button>Projects</button></li>
-    <li> <button>
-      Contact
-    </button></li>
-  </ul>
-</div>  
-</nav>
-<div class="top-image">
-  <style>
-    /* .top-image{
+    <!-- BS 5 -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <input type="checkbox" name="" id="toggleMenu" style="display: none;" />
+    <section class="top-section">
+      <nav>
+        <div class="logo-div d-flex">
+          <span class="">LOGO</span>
+        </div>
+        <style>
+          #toggleMenu:checked ~ .top-section nav{
+            display:block;
+          }
+          #toggleMenu:checked ~ .top-section nav .logo-div{
+            /* display: block; */
+            /* margin: 10px !important; */
+     
+          }
+          #toggleMenu:checked ~ .top-section nav .d-flex {
+            /* display: block; */
+          }
+          #toggleMenu:checked ~ .link-div {
+            display: block;
+            border: solid;
+            width: 100%;
+          }
+          #toggleMenu:checked ~ .top-section nav .link-div {
+            display: block;
+            position: absolute;
+            z-index: 20;
+            width: 80%;
+            margin: 0 10%;
+            /* border: solid red; */
+           
+          }
+          #toggleMenu:checked ~ .top-section nav .link-div ul {
+            display: block;
+            /* background-color: #ddd; */
+            width: 100%;
+          }
+          #toggleMenu:checked ~ .top-section nav .link-div ul li {
+            display: block;
+            /* background-color: #ddd; */
+            /* border: solid; */
+            width: 100%;
+            text-align: center;
+          }
+        </style>
+        <div class="link-div">
+          <ul>
+            <li><button>About</button></li>
+            <li><button>Services</button></li>
+            <li><button>Projects</button></li>
+            <li><button>Contact</button></li>
+          </ul>
+        </div>
+        <label for="toggleMenu">
+          <img src="images/icon-hamburger.svg" alt="">
+        </label>
+      </nav>
+    
+      <div class="top-image">
+        <style>
+          /* .top-image{
       max-width: 100%;
       height: 100vh;
 background-image: url('images/desktop/image-header.jpg');
 background-repeat: no-repeat;
   /* background-attachment: fixed; */
-  /* background-size: cover; * /
+          /* background-size: cover; * /
     } */
-    .top-text{
-      position: absolute;
-      margin: auto;
-      border: solid;
-      /* left: 50%; */
-      top: 20%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .top-text span{
-     /* border: solid; */
-     text-transform: uppercase;
-     margin: 30px auto;
-     font-size: 60px;
-     font-family: Fraunces;
-     font-stretch: expanded;
-    }
-    .top-text img{
-      /* position: absolute;*/
-      margin: auto; 
-      /* border: solid; */
-      /* height: 100px; */
-      max-width: 50px;
-    } 
-    .mb-img{
-      display: none;
-    }
- 
-    @media (min-width:0px) and   (max-width:767px) {
-      .top-text img{
-        max-width: 35px;
-      } 
-    .top-text span{
-  color: yellow;
-  font-size: 200%;
-  }
+          .top-text {
+            position: absolute;
+            margin: auto;
+            /* border: solid; */
+            /* left: 50%; */
+            top: 20%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+          }
+          .top-text span {
+            /* border: solid; */
+            text-transform: uppercase;
+            margin: 30px auto;
+            font-size: 60px;
+            font-family: Fraunces;
+            font-stretch: expanded;
+          }
+          .top-text img {
+            /* position: absolute;*/
+            margin: auto;
+            /* border: solid; */
+            /* height: 100px; */
+            max-width: 50px;
+          }
+          .mb-img {
+            display: none;
+          }
 
-    }
+          @media (min-width: 0px) and (max-width: 767px) {
+            .top-text img {
+              max-width: 35px;
+            }
+            .top-text span {
+              color: yellow;
+              font-size: 200%;
+            }
+          }
 
-    @media (min-width:768px)and  (max-width:1440px) {
-      .top-text span{
-    color: red;
-    /* font-size: 250%; */
-    font-size: 3rem !important;
-    }
-    .mb-img{
-      display: none;
-    }
-      .ds-img{
-      display: block;
-    }
-    .top-text{
-      top: 20%;
-    }
-    .top-text img{
-      /* width: 100px; */
-      min-width: 30px !important;
-      min-height: 60px !important;
-      height: 20vw;
-    } 
+          @media (min-width: 768px) and (max-width: 1440px) {
+            .top-text span {
+              color: red;
+              /* font-size: 250%; */
+              font-size: 3rem !important;
+            }
+            .mb-img {
+              display: none;
+            }
+            .ds-img {
+              display: block;
+            }
+            .top-text {
+              top: 20%;
+            }
+            .top-text img {
+              /* width: 100px; */
+              min-width: 30px !important;
+              min-height: 60px !important;
+              height: 20vw;
+            }
 
-    .top-text span{
-     /* font-size:20px; */
-     font-size:5rem;
-     margin: 0;
-    }
-  }
-  /* @media (min-width:0px) and   (max-width: 378px) { */
-    @media (min-width:0px) and   (max-width: 375px) {
-      .mb-img{
-      display: block;
-    }
-      .ds-img{
-      display: none;
-    }
-    .top-text{
-      top: 18%;
-    }
-    .top-text img{
-      width: 100%;
-      min-width: 30px !important;
-    } 
+            .top-text span {
+              /* font-size:20px; */
+              font-size: 5rem;
+              margin: 0;
+            }
+          }
+          /* @media (min-width:0px) and   (max-width: 378px) { */
+          @media (min-width: 0px) and (max-width: 375px) {
+            .mb-img {
+              display: block;
+            }
+            .ds-img {
+              display: none;
+            }
+            .top-text {
+              top: 18%;
+            }
+            .top-text img {
+              width: 100%;
+              min-width: 30px !important;
+            }
 
-    .top-text span{
-     font-size:40px;
-    }
-    }
-    
+            .top-text span {
+              font-size: 40px;
+            }
+          }
+        </style>
+        <div class="d-flex">
+          <div class="top-text">
+            <span class="text-center"> We are creatives </span>
+            <img src="images/icon-arrow-down.svg" alt="" />
+          </div>
+        </div>
+        <div class="d-flex" style="background-color: #3dbeff">
+          <img src="images/mobile/image-header.jpg" class="mb-img" alt="" />
+          <img src="images/desktop/image-header.jpg" class="ds-img" alt="" />
+        </div>
+      </div>
+    </section>
 
- 
-  </style>
- <div class="d-flex">
-  <div class="top-text">
-    <span class="text-center">
-      We are creatives
-    </span>
-    <img src="images/icon-arrow-down.svg" alt="">
-   </div>
- </div>
-<div class="d-flex" style="background-color: #3DBEFF;">
-  <img src="images/mobile/image-header.jpg" class="mb-img" alt="">
-  <img src="images/desktop/image-header.jpg" class="ds-img" alt="">
-</div>
-
-</div>
-  </section>
-
-
-
-
- <section class="grid-section">
-   <!-- <div class="flexbox">
+    <section class="grid-section">
+      <!-- <div class="flexbox">
      <div class="item flexbox">
      <div class="text-div">
       <h1>
@@ -187,59 +249,60 @@ background-repeat: no-repeat;
        <img src="images/desktop/image-transform.jpg" alt="">
      </div>
    </div> -->
-   <style>
-     .text-area{
-      background-color: rgb(255,251,248);
+      <style>
+        .text-area {
+          background-color: rgb(255, 251, 248);
+        }
+      </style>
+      <div class="co ntainer-fluid">
+        <div class="row md-reverse">
+          <div class="col-md-6 text-area">
+            <div class="d-flex">
+              <div class="text-div">
+                <h1>Transform your brand</h1>
 
-     }
-   </style>
-   <div class="co ntainer-fluid">
-     <div class="row md-reverse">
-       <div class="col-md-6 text-area">
-      <div class="d-flex">
-        <div class="text-div">
-          <h1>
-            Transform your brand
-          </h1>
-    
-          We are a full-service creative agency specializing in helping brands grow fast. 
-          Engage your clients through compelling visuals that do most of the marketing for you.
-        
-          <button>
-            Learn more
-          </button>
-         </div>
-      </div>
-       </div>
-       <div class="col-md-6">
-        <img src="images/desktop/image-transform.jpg" class="w-100" alt="">
-       </div>
-     </div>
-   </div>
-   <div class="container-fluid">
-     <div class="row">
-       <div class="col-md-6">
-        <img src="images/desktop/image-stand-out.jpg" class="w-100" alt="">
+                We are a full-service creative agency specializing in helping
+                brands grow fast. Engage your clients through compelling visuals
+                that do most of the marketing for you.
 
-       </div>
-       <div class="col-md-6 text-area">
-      <div class="d-flex w-100 text-center">
-        <div class="text-div m-auto">
-          <h1>
-            Stand out to the right audience
-          </h1>
-    
-          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-        
-          <button>
-            Learn more
-          </button>
-         </div>
+                <button>Learn more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="images/desktop/image-transform.jpg"
+              class="w-100"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
-       </div>
-     </div>
-   </div>
-<!-- 
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="images/desktop/image-stand-out.jpg"
+              class="w-100"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6 text-area">
+            <div class="d-flex w-100 text-center">
+              <div class="text-div m-auto">
+                <h1>Stand out to the right audience</h1>
+
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we’ll build and
+                extend your brand in digital places.
+
+                <button>Learn more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
    <div class="flexbox ">
      <div class="item two-img">
        
@@ -250,94 +313,102 @@ background-repeat: no-repeat;
      </div>
    </div> -->
 
-   <div class="row" >
-     <div class="col-md-6" style="position: relative;">
-      <img src="images/desktop/image-graphic-design.jpg" class="w-100 t-img" alt="">
-      <div class="hover-text">
-        <h2>  Graphic design</h2>
-        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      <div class="row">
+        <div class="col-md-6" style="position: relative">
+          <img
+            src="images/desktop/image-graphic-design.jpg"
+            class="w-100 t-img"
+            alt=""
+          />
+          <div class="hover-text">
+            <h2>Graphic design</h2>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </div>
+        </div>
+        <div class="col-md-6" style="position: relative">
+          <img
+            src="images/desktop/image-photography.jpg"
+            class="w-100 t-img"
+            alt=""
+          />
+          <div class="hover-text">
+            <h2>Photography</h2>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </div>
+        </div>
       </div>
-     </div>
-     <div class="col-md-6"  style="position: relative;">
-      <img src="images/desktop/image-photography.jpg" class="w-100 t-img" alt="">
-      <div class="hover-text">
-        <h2> Photography</h2>
-        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-      </div>
-     </div>
-   </div>
- </section>
+    </section>
 
-<section class="testimonials-section text-area ">
-
-  <h1 class="text-center">
-    Client testimonials
-  </h1>
-<!-- <div class="flexbox space-around">
+    <section class="testimonials-section text-area">
+      <h1 class="text-center">Client testimonials</h1>
+      <!-- <div class="flexbox space-around">
    
   
 </div> -->
 
-<div class="row">
-  <div class="col-md-4">
-     <!-- testimonials start -->
-     <div class="testimonials-card">
-      <div class="img-div">
-        <img src="images/image-emily.jpg" alt="">
-      </div>
-      <div class="text-div">
-        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-        
-        <div class="name-div">
-          Emily R. <br>
-          <span>Marketing Director</span>
+      <div class="row">
+        <div class="col-md-4">
+          <!-- testimonials start -->
+          <div class="testimonials-card">
+            <div class="img-div">
+              <img src="images/image-emily.jpg" alt="" />
+            </div>
+            <div class="text-div">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+
+              <div class="name-div">
+                Emily R. <br />
+                <span>Marketing Director</span>
+              </div>
+            </div>
+          </div>
+          <!-- testimonials ends -->
+        </div>
+        <div class="col-md-4">
+          <!-- testimonials start -->
+          <div class="testimonials-card">
+            <div class="img-div">
+              <img src="images/image-thomas.jpg" alt="" />
+            </div>
+            <div class="text-div">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+              <div class="name-div">
+                Thomas S.
+                <br />
+                <span>Chief Operating Officer</span>
+              </div>
+            </div>
+          </div>
+          <!-- testimonials ends -->
+        </div>
+        <div class="col-md-4">
+          <!-- testimonials start -->
+          <div class="testimonials-card">
+            <div class="img-div">
+              <img src="images/image-jennie.jpg" alt="" />
+            </div>
+            <div class="text-div">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+
+              <div class="name-div">
+                Jennie F.. <br />
+                <span> Business Owner</span>
+              </div>
+            </div>
+          </div>
+          <!-- testimonials ends -->
         </div>
       </div>
-    </div>
-    <!-- testimonials ends -->
-  </div>
-  <div class="col-md-4">
-        <!-- testimonials start -->
-  <div class="testimonials-card">
-    <div class="img-div">
-      <img src="images/image-thomas.jpg" alt="">
-    </div>
-    <div class="text-div">
-      Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-      <div class="name-div">
-        Thomas S.
-         <br>
-        <span>Chief Operating Officer</span>
-      </div>
-    </div>
-  </div>
-  <!-- testimonials ends -->
-  </div>
-  <div class="col-md-4">
-    
-    <!-- testimonials start -->
-    <div class="testimonials-card">
-      <div class="img-div">
-        <img src="images/image-jennie.jpg" alt="">
-      </div>
-      <div class="text-div">
-        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-        
-       
-        <div class="name-div">
-          Jennie F.. <br>
-          <span> Business Owner</span>
-        </div>
-      </div>
-    </div>
-    <!-- testimonials ends -->
-  </div>
-</div>
-</section>
+    </section>
 
-<section class="image-section">
-
-  <!-- <div class="flexbox">
+    <section class="image-section">
+      <!-- <div class="flexbox">
     <div class="item"><img src="images/mobile/image-gallery-milkbottles.jpg" alt=""></div>
     <div class="item">
       <img src="images/desktop/image-gallery-orange.jpg" alt="">
@@ -350,68 +421,79 @@ background-repeat: no-repeat;
 
     </div>
   </div> -->
-  <style>
-    /* .image-section .row .col-xs-6 img{
+      <style>
+        /* .image-section .row .col-xs-6 img{
  
       /* height: 415px; * /
     } */
-    @media (max-width:420px) {
-      .image-section .row .col-xs-6 img{
-   
-        /* height: 300px; */
-      }
+        @media (max-width: 420px) {
+          .image-section .row .col-xs-6 img {
+            /* height: 300px; */
+          }
+        }
+        @media (max-width: 767px) {
+          .image-section .row .col-xs-6 {
+            width: 50%;
+          }
+        }
+      </style>
 
-    }
-    @media (max-width:767px) {
-      
-      .image-section .row .col-xs-6{
-        width: 50%;
-      }
-    }
-  </style>
+      <div class="row" style="--bs-gutter-x: 0">
+        <div class="col-md-3 col-xs-6">
+          <img
+            src="images/desktop/image-gallery-milkbottles.jpg"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <img
+            src="images/desktop/image-gallery-orange.jpg"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <img
+            src="images/desktop/image-gallery-cone.jpg"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <img
+            src="images/desktop/image-gallery-sugarcubes.jpg"
+            class="w-100"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
 
-  <div class="row" style="  --bs-gutter-x: 0;">
-    <div class="col-md-3 col-xs-6">
-      <img src="images/desktop/image-gallery-milkbottles.jpg" class="w-100" alt="">
-    </div>
-    <div class="col-md-3 col-xs-6">
-      <img src="images/desktop/image-gallery-orange.jpg" class="w-100" alt="">
-    </div>
-    <div class="col-md-3 col-xs-6">
-      <img src="images/desktop/image-gallery-cone.jpg" class="w-100" alt="">
-    </div>
-    <div class="col-md-3 col-xs-6">
-      <img src="images/desktop/image-gallery-sugarcubes.jpg" class="w-100" alt="">
-    </div>
-  </div>
+    <section class="footer-section">
+      <div class="logo-div">LOGO</div>
 
-</section>
- 
-
-<section class="footer-section">
-  <div class="logo-div">
-LOGO
-  </div>
-  
- <div class="flexbox" style="flex-direction: column;">
-  <ul class="flexbox">
-    <li> About</li>
-    <li> Services</li>
-    <li> Projects</li>
-    <li> Contact</li>
-  </ul>
-  <ul class="flexbox">
-    <li> <i class="fab fa-facebook-square" aria-hidden="true"></i></li>
-    <li> <i class="fab fa-instagram" aria-hidden="true"></i></li>
-    <li> <i class="fab fa-twitter" aria-hidden="true"></i></li>
-    <li> <i class="fab fa-pinterest" aria-hidden="true"></i></li>
-  </ul>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
- </div>
-</section>
-<!-- <img src="design/mobile-design.jpg" alt=""> -->
-</body>
+      <div class="flexbox" style="flex-direction: column">
+        <ul class="flexbox">
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+        <ul class="flexbox">
+          <li><i class="fab fa-facebook-square" aria-hidden="true"></i></li>
+          <li><i class="fab fa-instagram" aria-hidden="true"></i></li>
+          <li><i class="fab fa-twitter" aria-hidden="true"></i></li>
+          <li><i class="fab fa-pinterest" aria-hidden="true"></i></li>
+        </ul>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </div>
+    </section>
+    <!-- <img src="design/mobile-design.jpg" alt=""> -->
+  </body>
 </html>

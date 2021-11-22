@@ -18,6 +18,9 @@ display: flex;
 position: absolute; 
 width: 100%;
   }
+  .top-section nav label{
+display: none;
+  }
   .top-section nav .logo-div{
 margin: 10px auto 10px 10px  ;
 /* border: solid; */
@@ -113,7 +116,27 @@ font-size: 18px;
       /* hid the nav on mobile */
       nav .link-div{
         display: none;
+        background-color: #fff;
+        color: #ddd;
     }
+    .top-section nav ul li button{
+      color: hsl(232, 10%, 55%);
+      font-family: Barlow;
+    }
+    .top-section nav ul li button:hover{
+      background-color:transparent;
+    }
+    .top-section nav ul li button:focus{
+      background-color: hsl(51, 100%, 49%);
+      color: hsl(213, 9%, 39%);
+      font-family: Fraunces;
+        }
+    .top-section nav label{
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+        }
       .grid-section .text-div h1{
         font-size: 30px;
         margin-bottom: 20px;
