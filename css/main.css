@@ -20,9 +20,10 @@ width: 100%;
   }
   .top-section nav .logo-div{
 margin: 10px auto 10px 10px  ;
+font-weight: bolder;
 /* border: solid; */
   }
-
+  
   .top-section nav ul{
 list-style: none;
 display: flex;
@@ -37,13 +38,17 @@ border-radius: 20px;
 border:none;
 background-color: transparent;
 color: #fff;
+font-weight: bolder;
   }
   .top-section nav ul li button:hover{
-background-color: #ddd;
+background-color:#d0d5e06b;
+color:white;
+text-transform: uppercase;
   }
   .top-section nav ul li button:focus{
 background-color: #fff;
-color: turquoise;
+color: black;
+text-transform: uppercase;
   }
   .top-section .top-image{
 display: block;
@@ -79,7 +84,6 @@ margin-top: 0;
     margin-bottom: 30px;
     font-weight: 900;
     color:  hsl(212, 27%, 19%);
-  
   }
  .grid-section .text-div button{
     display: block;
@@ -88,7 +92,7 @@ margin-top: 0;
     background-color: transparent;
     border: none;
     font-family: 'Fraunces', serif;
-font-size: 18px;
+    font-size: 18px;
   }
  .grid-section .text-div button:hover{
       border-bottom: 10px solid hsl(51, 100%, 49%);
@@ -161,7 +165,7 @@ font-size: 18px;
     /* margin: auto 150px; */
     text-align: center;
     font-family: 'Barlow', sans-serif;
-padding: 20px;
+    padding: 20px;
   }
   .hover-text h2{
    margin-bottom: 30px;
@@ -225,6 +229,7 @@ font-family: 'Barlow', sans-serif;
   padding: 50px;
   font-family: Fraunces;
   font-size: 30px;
+  color: rgb(59, 126, 112);
   }
   .footer-section ul{
    list-style: none;
