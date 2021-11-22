@@ -76,19 +76,22 @@ margin-top: 0;
   }
  .grid-section .text-div{
     font-family: 'Barlow', sans-serif;
-    /* margin: auto 150px; */
+    padding: 150px;
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
   }
  .grid-section .text-div h1{
     font-size: 40px;
     font-family: 'Fraunces', serif;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-weight: 900;
     color:  hsl(212, 27%, 19%);
   }
+
  .grid-section .text-div button{
     display: block;
     margin-top: 50px;
-    /* font-weight: ; */
     background-color: transparent;
     border: none;
     font-family: 'Fraunces', serif;
@@ -133,11 +136,14 @@ margin-top: 0;
     background-color: rgb(255,251,248);
     text-align: center;
     }
-
+    .grid-section  .text-div{
+      font-family: 'Barlow', sans-serif;
+    }
   .grid-section  .text-div{
       font-family: 'Barlow', sans-serif;
       margin: 20px;
       color: hsl(213, 9%, 39%);
+      padding: 120px;
     }
   .grid-section  .text-div h1{
       font-size: 30px;
@@ -146,10 +152,8 @@ margin-top: 0;
 
     }
   .grid-section  .text-div button{
-
-      margin-top: 25px;
-
-  font-size: 15px;
+    margin-top: 25px;
+    font-size: 15px;
     }
 
   }
@@ -162,19 +166,21 @@ margin-top: 0;
     display: block;
     position: absolute;
     bottom: 40px;
-    /* margin: auto 150px; */
+    margin: auto 150px;
     text-align: center;
     font-family: 'Barlow', sans-serif;
-    padding: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
   }
   .hover-text h2{
    margin-bottom: 30px;
    font-family: 'Fraunces', serif;
-
+    
   }
   @media (max-width:375px) {
     .hover-text{
-
+       padding-left: 30px;
+        padding-right: 20px;
         bottom: 20px;
 
       }
