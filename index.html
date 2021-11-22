@@ -70,14 +70,6 @@
           #toggleMenu:checked ~ .top-section nav{
             display:block;
           }
-          #toggleMenu:checked ~ .top-section nav .logo-div{
-            /* display: block; */
-            /* margin: 10px !important; */
-     
-          }
-          #toggleMenu:checked ~ .top-section nav .d-flex {
-            /* display: block; */
-          }
           #toggleMenu:checked ~ .link-div {
             display: block;
             border: solid;
@@ -89,18 +81,13 @@
             z-index: 20;
             width: 80%;
             margin: 0 10%;
-            /* border: solid red; */
-           
           }
           #toggleMenu:checked ~ .top-section nav .link-div ul {
             display: block;
-            /* background-color: #ddd; */
             width: 100%;
           }
           #toggleMenu:checked ~ .top-section nav .link-div ul li {
             display: block;
-            /* background-color: #ddd; */
-            /* border: solid; */
             width: 100%;
             text-align: center;
           }
@@ -120,26 +107,16 @@
     
       <div class="top-image">
         <style>
-          /* .top-image{
-      max-width: 100%;
-      height: 100vh;
-background-image: url('images/desktop/image-header.jpg');
-background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-          /* background-size: cover; * /
-    } */
           .top-text {
             position: absolute;
             margin: auto;
-            /* border: solid; */
-            /* left: 50%; */
+            
             top: 20%;
             width: 100%;
             display: flex;
             flex-direction: column;
           }
           .top-text span {
-            /* border: solid; */
             text-transform: uppercase;
             margin: 30px auto;
             font-size: 60px;
@@ -147,10 +124,7 @@ background-repeat: no-repeat;
             font-stretch: expanded;
           }
           .top-text img {
-            /* position: absolute;*/
             margin: auto;
-            /* border: solid; */
-            /* height: 100px; */
             max-width: 50px;
           }
           .mb-img {
@@ -169,8 +143,7 @@ background-repeat: no-repeat;
 
           @media (min-width: 768px) and (max-width: 1440px) {
             .top-text span {
-              color: red;
-              /* font-size: 250%; */
+              /* color: red; */
               font-size: 3rem !important;
             }
             .mb-img {
@@ -183,19 +156,16 @@ background-repeat: no-repeat;
               top: 20%;
             }
             .top-text img {
-              /* width: 100px; */
               min-width: 30px !important;
               min-height: 60px !important;
               height: 20vw;
             }
 
             .top-text span {
-              /* font-size:20px; */
               font-size: 5rem;
               margin: 0;
             }
           }
-          /* @media (min-width:0px) and   (max-width: 378px) { */
           @media (min-width: 0px) and (max-width: 375px) {
             .mb-img {
               display: block;
@@ -230,25 +200,6 @@ background-repeat: no-repeat;
     </section>
 
     <section class="grid-section">
-      <!-- <div class="flexbox">
-     <div class="item flexbox">
-     <div class="text-div">
-      <h1>
-        Transform your brand
-      </h1>
-
-      We are a full-service creative agency specializing in helping brands grow fast. 
-      Engage your clients through compelling visuals that do most of the marketing for you.
-    
-      <button>
-        Learn more
-      </button>
-     </div>
-     </div>
-     <div class="item">
-       <img src="images/desktop/image-transform.jpg" alt="">
-     </div>
-   </div> -->
       <style>
         .text-area {
           background-color: rgb(255, 251, 248);
@@ -302,17 +253,6 @@ background-repeat: no-repeat;
           </div>
         </div>
       </div>
-      <!-- 
-   <div class="flexbox ">
-     <div class="item two-img">
-       
-      </div>
-      <div class="item two-img">
-       
-
-     </div>
-   </div> -->
-
       <div class="row">
         <div class="col-md-6" style="position: relative">
           <img
@@ -408,29 +348,7 @@ background-repeat: no-repeat;
     </section>
 
     <section class="image-section">
-      <!-- <div class="flexbox">
-    <div class="item"><img src="images/mobile/image-gallery-milkbottles.jpg" alt=""></div>
-    <div class="item">
-      <img src="images/desktop/image-gallery-orange.jpg" alt="">
-    </div>
-    <div class="item">
-      <img src="images/desktop/image-gallery-cone.jpg" alt="">
-    </div>
-    <div class="item">
-      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
-
-    </div>
-  </div> -->
       <style>
-        /* .image-section .row .col-xs-6 img{
- 
-      /* height: 415px; * /
-    } */
-        @media (max-width: 420px) {
-          .image-section .row .col-xs-6 img {
-            /* height: 300px; */
-          }
-        }
         @media (max-width: 767px) {
           .image-section .row .col-xs-6 {
             width: 50%;
@@ -469,33 +387,6 @@ background-repeat: no-repeat;
         </div>
       </div>
     </section>
-
-    <section class="footer-section">
-      <div class="logo-div">LOGO</div>
-
-      <div class="flexbox" style="flex-direction: column">
-        <ul class="flexbox">
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-        <ul class="flexbox">
-          <li><i class="fab fa-facebook-square" aria-hidden="true"></i></li>
-          <li><i class="fab fa-instagram" aria-hidden="true"></i></li>
-          <li><i class="fab fa-twitter" aria-hidden="true"></i></li>
-          <li><i class="fab fa-pinterest" aria-hidden="true"></i></li>
-        </ul>
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
-        </div>
-      </div>
-    </section>
-    <!-- <img src="design/mobile-design.jpg" alt=""> -->
-  </body>
 <section class="footer-section">
   <div class="logo-div">
 LOGO
@@ -516,7 +407,7 @@ LOGO
   </ul>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Group 64 Sidehustle 4.0</a>.
+    Coded by <a href="https://github.com/jovick-coder/sunnyside-agency-landing-page-main">Group 60 Sidehustle 4.0</a>.
   </div>
  </div>
 </section>
