@@ -20,6 +20,7 @@ body {
 }
 .top-section nav .logo-div {
   margin: 10px auto 10px 10px;
+  font-weight: bolder;
 }
 
 .top-section nav ul {
@@ -36,13 +37,17 @@ body {
   border: none;
   background-color: transparent;
   color: #fff;
+  font-weight: bolder;
 }
 .top-section nav ul li button:hover {
-  background-color: #ddd;
+  background-color:#d0d5e06b;
+  color:white;
+  text-transform: uppercase;
 }
 .top-section nav ul li button:focus {
   background-color: #fff;
-  color: turquoise;
+  color: black;
+  text-transform: uppercase;
 }
 .top-section .top-image {
   display: block;
@@ -68,11 +73,15 @@ body {
 }
 .grid-section .text-div {
   font-family: 'Barlow', sans-serif;
+  padding: 150px;
+  text-align: justify;
+  padding-left: 120px;
+  padding-right: 110px;
 }
 .grid-section .text-div h1 {
   font-size: 40px;
   font-family: 'Fraunces', serif;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   font-weight: 900;
   color: hsl(212, 27%, 19%);
 }
@@ -107,14 +116,25 @@ body {
   .top-section nav ul li button {
     color: hsl(232, 10%, 55%);
     font-family: Barlow;
+    font-weight: bolder;
+    margin: 10px 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border:none;
+    background-color: transparent;    
   }
   .top-section nav ul li button:hover {
     background-color: transparent;
+    color:white;
+    text-transform: uppercase;
   }
   .top-section nav ul li button:focus {
     background-color: hsl(51, 100%, 49%);
     color: hsl(213, 9%, 39%);
     font-family: Fraunces;
+    color: black;
+    text-transform: uppercase;
   }
   .top-section nav label {
     display: block;
@@ -140,6 +160,7 @@ body {
     font-family: 'Barlow', sans-serif;
     margin: 20px;
     color: hsl(213, 9%, 39%);
+    padding: 120px;
   }
   .grid-section .text-div h1 {
     font-size: 30px;
@@ -147,7 +168,6 @@ body {
   }
   .grid-section .text-div button {
     margin-top: 25px;
-
     font-size: 15px;
   }
 }
@@ -162,7 +182,10 @@ body {
   bottom: 40px;
   text-align: center;
   font-family: 'Barlow', sans-serif;
+  margin: auto 150px;
   padding: 20px;
+  padding-left: 30px;
+  padding-right: 20px;
 }
 .hover-text h2 {
   margin-bottom: 30px;
@@ -212,6 +235,7 @@ body {
   padding: 50px;
   font-family: Fraunces;
   font-size: 30px;
+  color: rgb(59, 126, 112);
 }
 .footer-section ul {
   list-style: none;
@@ -231,7 +255,6 @@ body {
 .top-text {
   position: absolute;
   margin: auto;
-
   top: 20%;
   width: 100%;
   display: flex;
@@ -245,8 +268,11 @@ body {
   font-stretch: expanded;
 }
 .top-text img {
-  margin: auto;
+  margin:auto;
   max-width: 50px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  height: 20vw;
 }
 .mb-img {
   display: none;
@@ -283,10 +309,11 @@ body {
     min-width: 30px !important;
     min-height: 60px !important;
     height: 20vw;
+    padding-top: 30px;
   }
 
   .top-text span {
-    font-size: 5rem;
+    font-size: 200%;
     margin: 0;
   }
 }
