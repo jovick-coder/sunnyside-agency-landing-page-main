@@ -68,6 +68,8 @@ body {
 }
 .grid-section .text-div {
   font-family: 'Barlow', sans-serif;
+  width: 70%;
+ padding-top: 6rem;
 }
 .grid-section .text-div h1 {
   font-size: 40px;
@@ -89,6 +91,14 @@ body {
 }
 .testimonials-section {
   padding: 20px;
+}
+
+.text-center{
+  letter-spacing: 0.3rem;
+}
+
+.logo-div{
+  font-weight: 500;
 }
 @media (max-width: 767px) {
   .grid-section .md-reverse {
@@ -159,10 +169,12 @@ body {
 .hover-text {
   display: block;
   position: absolute;
-  bottom: 40px;
+  bottom: 10px;
   text-align: center;
   font-family: 'Barlow', sans-serif;
-  padding: 20px;
+  padding: 3rem;
+  margin: 5rem 0 0 5rem;
+  width: 70%;
 }
 .hover-text h2 {
   margin-bottom: 30px;
