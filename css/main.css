@@ -37,17 +37,21 @@ body {
   border: none;
   background-color: transparent;
   color: #fff;
-  font-weight: bolder;
+  font-weight: bold;
+  font-size: 16px;
 }
 .top-section nav ul li button:hover {
-  background-color:#d0d5e06b;
-  color:white;
-  text-transform: uppercase;
+  background-color:hsla(0, 0%, 100%, 0.213);
+  /* background-color:#929aac6b; */
+  /* color:white; */
+  /* text-transform: uppercase; */
 }
 .top-section nav ul li button:focus {
   background-color: #fff;
-  color: black;
+  color: hsl(167, 40%, 24%);
+  /* color: black; */
   text-transform: uppercase;
+  font-family: Fraunces;
 }
 .top-section .top-image {
   display: block;
@@ -90,8 +94,8 @@ body {
   margin-top: 50px;
   background-color: transparent;
   border: none;
-  font-family: 'Fraunces', serif;
-  font-size: 18px;
+  /* font-family: 'Fraunces', serif; */
+  /* font-size: 18px; */
 }
 .grid-section .text-div button:hover {
   border-bottom: 10px solid hsl(51, 100%, 49%);
@@ -115,24 +119,24 @@ body {
   }
   .top-section nav ul li button {
     color: hsl(232, 10%, 55%);
-    font-family: Barlow;
-    font-weight: bolder;
+    /* font-family: Barlow; */
+    /* font-weight: bolder; */
     margin: 10px 5px;
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 20px;
-    border:none;
-    background-color: transparent;    
+    /* border:none; */
+    /* background-color: transparent;     */
   }
   .top-section nav ul li button:hover {
     background-color: transparent;
-    color:white;
-    text-transform: uppercase;
+    /* color:white; */
+    /* text-transform: uppercase; */
   }
   .top-section nav ul li button:focus {
     background-color: hsl(51, 100%, 49%);
     color: hsl(213, 9%, 39%);
-    font-family: Fraunces;
+    /* font-family: Fraunces; */
     color: black;
     text-transform: uppercase;
   }
@@ -168,7 +172,7 @@ body {
   }
   .grid-section .text-div button {
     margin-top: 25px;
-    font-size: 15px;
+    /* font-size: 15px; */
   }
 }
 @media (max-width: 1440px) {
